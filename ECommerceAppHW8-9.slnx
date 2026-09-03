@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ecommerceappl8.client/ecommerceappl8.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ECommerceAppL8.Server/ECommerceAppL8.Server.csproj" />
+</Solution>
