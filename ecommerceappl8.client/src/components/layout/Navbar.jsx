@@ -8,8 +8,9 @@ import {
   Badge,
 } from "@mui/material";
 
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutlined";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -93,6 +94,10 @@ function Navbar() {
         </Box>
 
         <Box sx={{ flexGrow: 1 }} />
+
+        <IconButton onClick={() => navigate("/wishlist")} sx={{ mr: 1 }}>
+          <FavoriteBorderIcon />
+        </IconButton>
 
         {/* Cart */}
         <IconButton onClick={() => navigate("/cart")} sx={{ mr: 1 }}>

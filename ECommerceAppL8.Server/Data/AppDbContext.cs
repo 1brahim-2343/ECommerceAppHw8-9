@@ -24,6 +24,8 @@ namespace ECommerceAppL8.Server.Data
 
         public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
         public DbSet<ProductReview> Reviews => Set<ProductReview>();
+        public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<WishlistItem> WishlistItems { get; set; }
 
         protected override void OnModelCreating(
             ModelBuilder modelBuilder)

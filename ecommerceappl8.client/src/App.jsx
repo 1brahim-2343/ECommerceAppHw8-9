@@ -13,6 +13,7 @@ import CartPage from "./pages/CartPage";
 import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import WishlistPage from "./pages/WishlistPage"
 
 function App() {
   return (
@@ -25,6 +26,15 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
 
         <Route path="/products" element={<ProductsPage />} />
+
+        <Route
+          path="/wishlist"
+          element={
+            <ProtectedRoute>
+              <WishlistPage />
+            </ProtectedRoute>
+          }
+        />
 
         <Route
           path="/cart"
